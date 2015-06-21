@@ -1,6 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo.Geometries\Src\Main\obj\x86\Debug\Common.Core.Geo.Geometries.csprojResolveAssemblyReference.cache
-C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Geometries\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll.config
-C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Geometries\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll
-C:\DevBuild\Tamu\GeoInnovation\Common\Core\Geo.Geometries\build\1.0.0\debug\Tamu.GeoInnovation.Common.Core.Geo.Geometries.pdb
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo.Geometries\Src\Main\obj\x86\Debug\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll
-C:\DevSource\Tamu\GeoInnovation\Common\Core\Geo.Geometries\Src\Main\obj\x86\Debug\Tamu.GeoInnovation.Common.Core.Geo.Geometries.pdb
