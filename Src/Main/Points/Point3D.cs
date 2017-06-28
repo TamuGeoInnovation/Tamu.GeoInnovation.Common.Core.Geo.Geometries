@@ -1,6 +1,5 @@
 using System;
 using System.Xml;
-using USC.GISResearchLab.Common.Geographics.Units;
 using USC.GISResearchLab.Common.Geometries.Vectors;
 
 namespace USC.GISResearchLab.Common.Geometries.Points
