@@ -255,6 +255,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
             if (SqlGeometry != null && !SqlGeometry.IsNull)
             {
+                bool envi = Environment.Is64BitProcess;
                 double geomLength = SqlGeometry.STLength().Value;
                 double lengthAlong = geomLength * percentage;
                 SqlGeometry pointAlong = SQLSpatialToolsFunctions.LocateAlongGeom(SqlGeometry, lengthAlong);
