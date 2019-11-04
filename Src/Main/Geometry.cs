@@ -1,9 +1,9 @@
+using Microsoft.SqlServer.Types;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Text;
 using System.Xml.Serialization;
-using Microsoft.SqlServer.Types;
 using USC.GISResearchLab.Common.Geographics.Units;
 using USC.GISResearchLab.Common.Geometries.Bearings;
 using USC.GISResearchLab.Common.Geometries.BoundingBoxes;
@@ -134,7 +134,7 @@ namespace USC.GISResearchLab.Common.Geometries
             {
                 ret = SqlGeography.STGeomFromText(new SqlChars(geogWKT), srid);
             }
-            catch 
+            catch
             {
 
                 // if the geography was invalid try the fixes from this page: http://www.beginningspatial.com/fixing_invalid_geography_data
@@ -147,7 +147,7 @@ namespace USC.GISResearchLab.Common.Geometries
                     {
                         ret = SqlGeography.STGeomFromWKB(sqlGeometry.MakeValid().STAsBinary(), sqlGeometry.STSrid.Value);
                     }
-                    catch 
+                    catch
                     {
                     }
 
@@ -158,7 +158,7 @@ namespace USC.GISResearchLab.Common.Geometries
                         {
                             ret = SqlGeography.STGeomFromWKB(sqlGeometry.STUnion(sqlGeometry.STStartPoint()).STAsBinary(), sqlGeometry.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -172,7 +172,7 @@ namespace USC.GISResearchLab.Common.Geometries
                             temp = temp.MakeValid();
                             ret = SqlGeography.STGeomFromWKB(temp.STAsBinary(), temp.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -187,7 +187,7 @@ namespace USC.GISResearchLab.Common.Geometries
                             temp = temp.MakeValid();
                             ret = SqlGeography.STGeomFromWKB(temp.STAsBinary(), temp.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -201,7 +201,7 @@ namespace USC.GISResearchLab.Common.Geometries
                             temp = temp.MakeValid();
                             ret = SqlGeography.STGeomFromWKB(temp.STAsBinary(), temp.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -225,7 +225,7 @@ namespace USC.GISResearchLab.Common.Geometries
                         {
                             ret = SqlGeography.STGeomFromWKB(sqlGeometry.Reduce(0.00001).STAsBinary(), sqlGeometry.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -237,7 +237,7 @@ namespace USC.GISResearchLab.Common.Geometries
                         {
                             ret = SqlGeography.STGeomFromWKB(sqlGeometry.Reduce(0.0001).STAsBinary(), sqlGeometry.STSrid.Value);
                         }
-                        catch 
+                        catch
                         {
                         }
                     }
@@ -247,7 +247,7 @@ namespace USC.GISResearchLab.Common.Geometries
                         string here = "here";
                     }
                 }
-                catch 
+                catch
                 {
                 }
             }
@@ -439,7 +439,7 @@ namespace USC.GISResearchLab.Common.Geometries
                         {
                             SqlGeography innerPoint = innerGeography.STPointN(k);
 
-                            if (i == 0 && j==1 && k == 1) // call begin figure on first loop
+                            if (i == 0 && j == 1 && k == 1) // call begin figure on first loop
                             {
                                 builder.BeginFigure(innerPoint.Lat.Value, innerPoint.Long.Value);
                             }

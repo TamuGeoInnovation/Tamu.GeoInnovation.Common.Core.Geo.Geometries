@@ -7,26 +7,26 @@ using USC.GISResearchLab.Common.Geometries.Polygons;
 
 namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
 {
-    public class BoundingBox: Polygon
+    public class BoundingBox : Polygon
     {
 
         public const double defaultBlank = 999999999999;
 
         #region Properties
-      
+
         private Unit _CoordinateUnits;
         public Unit CoordinateUnits
         {
             get { return _CoordinateUnits; }
             set { _CoordinateUnits = value; }
         }
-	
+
 
         public double Area
         {
             get
-            {   
-                double run = Math.Abs(MaxX - MinX); 
+            {
+                double run = Math.Abs(MaxX - MinX);
                 double rise = Math.Abs(MaxY - MinY);
                 return rise * run;
             }
@@ -62,7 +62,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
 
         public Point BottomLeft
         {
-            get{return new Point(MinX, MinY);}
+            get { return new Point(MinX, MinY); }
         }
 
         public Point BottomRight
@@ -72,7 +72,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
 
         public Point TopLeft
         {
-            get{return new Point(MinX, MaxY);}
+            get { return new Point(MinX, MaxY); }
         }
 
         public Point TopRight
@@ -87,7 +87,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
 
         public new Point[] Points
         {
-            get { return new Point[]{TopLeft, TopRight, BottomRight, BottomLeft, TopLeft}; }
+            get { return new Point[] { TopLeft, TopRight, BottomRight, BottomLeft, TopLeft }; }
         }
 
         public new Line[] Segments
@@ -102,7 +102,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
 
         public new double Cx
         {
-            get { return (MinX + MaxX)/2; }
+            get { return (MinX + MaxX) / 2; }
         }
 
         public new double Cy
@@ -133,7 +133,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
         public static BoundingBox FromCoordinateString(string xyString, Unit coordinateUnits)
         {
 
-            bool xIsNegative = false ;
+            bool xIsNegative = false;
             bool yIsNegative = false;
 
             double minX = Double.MaxValue;
@@ -164,7 +164,7 @@ namespace USC.GISResearchLab.Common.Geometries.BoundingBoxes
                         y = Math.Abs(y);
                     }
 
-                    
+
                     minX = x;
                     maxX = x;
                     minY = y;

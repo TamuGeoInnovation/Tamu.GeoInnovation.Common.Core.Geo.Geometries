@@ -96,7 +96,8 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
         public double Length
         {
-            get {
+            get
+            {
                 double ret = 0;
                 for (int i = 0; i < Lines.Length; i++)
                 {
@@ -106,7 +107,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
             }
         }
 
-            public int SourceId
+        public int SourceId
         {
             get { return _SourceId; }
             set { _SourceId = value; }
@@ -201,7 +202,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
                 Points[Points.Length - 1] = newPoint;
 
-                Line newLine = new Line(Points[Points.Length-2], Points[Points.Length-1]);
+                Line newLine = new Line(Points[Points.Length - 2], Points[Points.Length - 1]);
                 AddLine(newLine);
             }
             else

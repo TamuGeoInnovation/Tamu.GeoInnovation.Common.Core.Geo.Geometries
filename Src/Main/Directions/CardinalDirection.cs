@@ -7,20 +7,21 @@ using USC.GISResearchLab.Common.Geometries.Lines.Slopes;
 
 namespace USC.GISResearchLab.Common.Geometries.Directions
 {
-    public enum CardinalDirections { 
-        Uknown, 
-        North, 
-        NortNorthEast, 
-        NorthEast, 
-        NorthEastEast, 
-        East, 
-        SouthEastEast, 
-        SouthEast, 
-        SouthSouthEast, 
-        South, 
-        SouthSouthWest, 
-        SouthWest, 
-        SouthWestWest,      
+    public enum CardinalDirections
+    {
+        Uknown,
+        North,
+        NortNorthEast,
+        NorthEast,
+        NorthEastEast,
+        East,
+        SouthEastEast,
+        SouthEast,
+        SouthSouthEast,
+        South,
+        SouthSouthWest,
+        SouthWest,
+        SouthWestWest,
         West,
         NorthWestWest,
         NorthWest,
@@ -88,7 +89,7 @@ namespace USC.GISResearchLab.Common.Geometries.Directions
                     ret = DIR_W;
                 }
             }
-                // veriticle
+            // veriticle
             else if (slope == Slope.SLOPE_VERTICAL)
             {
                 if (fromY < toY)
@@ -497,7 +498,7 @@ namespace USC.GISResearchLab.Common.Geometries.Directions
                     break;
 
                 default:
-                    throw new Exception ("Unexpected or unimplemented CardinalDirections: " + direction);
+                    throw new Exception("Unexpected or unimplemented CardinalDirections: " + direction);
                     break;
             }
             return ret;

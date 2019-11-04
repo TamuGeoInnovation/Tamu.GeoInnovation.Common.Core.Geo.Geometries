@@ -1,6 +1,6 @@
-using System;
 using Microsoft.SqlServer.Types;
 using SQLSpatialTools;
+using System;
 using USC.GISResearchLab.Common.Exceptions.Geocoding.Calculations;
 using USC.GISResearchLab.Common.Geometries.BoundingBoxes;
 using USC.GISResearchLab.Common.Geometries.Directions;
@@ -72,30 +72,30 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
         public new double DeltaX
         {
-            get { return ((Vector) this).DeltaX; }
+            get { return ((Vector)this).DeltaX; }
         }
 
         public new double DeltaY
         {
-            get { return ((Vector) this).DeltaY; }
+            get { return ((Vector)this).DeltaY; }
         }
 
         public new double Length
         {
-            get { return ((Vector) this).Length; }
+            get { return ((Vector)this).Length; }
         }
 
         public override bool Valid
         {
             get
             {
-                return (Start!=null && End!= null && Start.Valid && End.Valid);
+                return (Start != null && End != null && Start.Valid && End.Valid);
             }
         }
 
         #endregion
 
-        
+
         public Line()
         {
             GeometryType = GeometryType.Line;
@@ -146,7 +146,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
             for (int i = 0; i < canidiateSegments.Length; i++)
             {
-                Line candidate = (Line) canidiateSegments[i];
+                Line candidate = (Line)canidiateSegments[i];
                 if (!reference.Equals(candidate))
                 {
                     bool isACorner = isAClockWiseCorner(reference, candidate);
@@ -249,7 +249,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
 
         public Point Interpolate(double percentage)
         {
-            
+
             double xVal = 0;
             double yVal = 0;
 
@@ -496,7 +496,7 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
                             }
                         }
 
-                            // western heading street
+                        // western heading street
                         else if (tolon < frlon)
                         {
                             if (IsLeftSide)

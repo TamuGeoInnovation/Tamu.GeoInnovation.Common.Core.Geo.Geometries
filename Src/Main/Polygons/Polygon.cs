@@ -9,8 +9,8 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
     {
         #region Properties
 
-        
-        
+
+
         //private LinearUnitTypes _Units;
 
         //public LinearUnitTypes Units
@@ -35,16 +35,16 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
 
         public Point CentroidPoint
         {
-            get { return new Point( Cx, Cy ); }
+            get { return new Point(Cx, Cy); }
         }
 
         public double[] Centroid
         {
             get { return new double[] { Cx, Cy }; }
-            set 
-            { 
+            set
+            {
                 Cx = value[0];
-                Cy = value[1]; 
+                Cy = value[1];
             }
         }
 
@@ -156,7 +156,7 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
             AddPoint(new Point(x, y));
         }
 
-        public void AddPoint(double [] coords)
+        public void AddPoint(double[] coords)
         {
             AddPoint(new Point(coords));
         }
@@ -323,7 +323,7 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
         {
             return ToString(false);
         }
-        
+
 
         public override string ToString(bool verbose)
         {

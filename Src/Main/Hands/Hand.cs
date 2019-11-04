@@ -1,7 +1,7 @@
 namespace USC.GISResearchLab.Common.Geometries.Hands
 {
 
-    public enum HandValues {unknown, left, right }
+    public enum HandValues { unknown, left, right }
 
     public class Hand
     {

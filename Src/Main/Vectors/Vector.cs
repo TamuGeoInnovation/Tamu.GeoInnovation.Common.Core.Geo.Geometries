@@ -28,7 +28,7 @@ namespace USC.GISResearchLab.Common.Geometries.Vectors
 
         public double Length
         {
-            get { return Math.Sqrt((DeltaX*DeltaX) + (DeltaY*DeltaY)); }
+            get { return Math.Sqrt((DeltaX * DeltaX) + (DeltaY * DeltaY)); }
         }
 
         #endregion
@@ -55,12 +55,12 @@ namespace USC.GISResearchLab.Common.Geometries.Vectors
 
         public static double DotProduct(Vector v1, Vector v2)
         {
-            return (v1.DeltaX*v2.DeltaX) + (v1.DeltaY*v2.DeltaY);
+            return (v1.DeltaX * v2.DeltaX) + (v1.DeltaY * v2.DeltaY);
         }
 
         public static double AngleBetween(Vector v1, Vector v2)
         {
-            double cosAngle = (DotProduct(v1, v2))/(v1.Length*v2.Length);
+            double cosAngle = (DotProduct(v1, v2)) / (v1.Length * v2.Length);
             double ret = Math.Acos(cosAngle);
             ret = ret * 180 / Math.PI;
             return ret;
@@ -95,7 +95,7 @@ namespace USC.GISResearchLab.Common.Geometries.Vectors
             sb.Append(FromY);
 
             sb.Append(",");
-            
+
             sb.Append(ToX);
             sb.Append(" ");
             sb.Append(ToY);
@@ -112,7 +112,7 @@ namespace USC.GISResearchLab.Common.Geometries.Vectors
 
         public virtual Vector Clone()
         {
-            Vector v = (Vector) MemberwiseClone();
+            Vector v = (Vector)MemberwiseClone();
             if (v != null)
             {
                 v.Id = Id;

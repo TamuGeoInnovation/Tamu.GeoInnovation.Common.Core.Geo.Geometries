@@ -7,25 +7,25 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
     /// <summary>
     /// Summary description for Segment.
     /// </summary>
-    public class SqlSpatialToolLine : Line 
+    public class SqlSpatialToolLine : Line
     {
 
-        
-        public SqlSpatialToolLine(): base()
+
+        public SqlSpatialToolLine() : base()
         {
-           
+
         }
 
         public SqlSpatialToolLine(double fromX, double fromY, double toX, double toY)
             : base(fromX, fromY, toX, toY)
         {
-           
+
         }
 
         public SqlSpatialToolLine(Point start, Point end)
             : base(start, end)
         {
-           
+
         }
 
 

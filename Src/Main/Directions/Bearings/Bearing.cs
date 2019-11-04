@@ -1,5 +1,5 @@
-using System;
 using Microsoft.SqlServer.Types;
+using System;
 using USC.GISResearchLab.Common.Geometries.Directions;
 using USC.GISResearchLab.Common.Geometries.Lines;
 using USC.GISResearchLab.Common.Geometries.Vectors;
