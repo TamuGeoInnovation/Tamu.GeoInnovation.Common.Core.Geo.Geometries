@@ -8,3 +8,12 @@ C:\DevSource\Tamu\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Common.Core.Geo.Geometries.Dev.csprojAssemblyReference.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Common.Core.Geo.Geometries.Dev.csproj.CoreCompileInputs.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Common.Core.Geo.Geometries.Dev.csproj.CopyComplete
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\SqlServerTypes\x64\msvcr120.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\SqlServerTypes\x86\msvcr120.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll.config
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Common.Core.Geo.Geometries.Dev.csprojAssemblyReference.cache
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Common.Core.Geo.Geometries.Dev.csproj.CopyComplete
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Geo.Geometries\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Geo.Geometries.dll
