@@ -9,29 +9,8 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
     {
         #region Properties
 
+        public string SRS { get; set; }
 
-
-        //private LinearUnitTypes _Units;
-
-        //public LinearUnitTypes Units
-        //{
-        //    get { return _Units; }
-        //    set { _Units = value; }
-        //}
-
-        private string _SRS;
-        public string SRS
-        {
-            get { return _SRS; }
-            set { _SRS = value; }
-        }
-
-        private double _Area;
-        public double Area
-        {
-            get { return _Area; }
-            set { _Area = value; }
-        }
 
         public Point CentroidPoint
         {
@@ -48,61 +27,13 @@ namespace USC.GISResearchLab.Common.Geometries.Polygons
             }
         }
 
-        private double _Cx;
-        public double Cx
-        {
-            get { return _Cx; }
-            set { _Cx = value; }
-        }
-
-        private double _Cy;
-        public double Cy
-        {
-            get { return _Cy; }
-            set { _Cy = value; }
-        }
-
-        private int _Id;
-        public int Id
-        {
-            get { return _Id; }
-            set { _Id = value; }
-        }
-
-        private int _NumParts;
-        public int NumParts
-        {
-            get { return _NumParts; }
-            set { _NumParts = value; }
-        }
-
-        private int _NumPoints;
-        public int NumPoints
-        {
-            get { return _NumPoints; }
-            set { _NumPoints = value; }
-        }
-
-        private int[] _Parts;
-        public int[] Parts
-        {
-            get { return _Parts; }
-            set { _Parts = value; }
-        }
-
-        private Point[] _Points;
-        public Point[] Points
-        {
-            get { return _Points; }
-            set { _Points = value; }
-        }
-
-        private Line[] _Segments;
-        public Line[] Segments
-        {
-            get { return _Segments; }
-            set { _Segments = value; }
-        }
+        public double Cx { get; set; }
+        public double Cy { get; set; }
+        public int NumParts { get; set; }
+        public int NumPoints { get; set; }
+        public int[] Parts { get; set; }
+        public Point[] Points { get; set; }
+        public Line[] Segments { get; set; }
 
         public override bool Valid
         {

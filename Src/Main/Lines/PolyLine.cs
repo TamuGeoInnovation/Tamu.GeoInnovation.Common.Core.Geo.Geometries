@@ -12,13 +12,6 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
     {
         #region Properties
 
-        private bool _IsReversed;
-        private Point[] _Points;
-        private Line[] _Lines;
-        private double _PrimaryBearing;
-        private int _PrimaryDirection;
-        private string _Source;
-        private int _SourceId;
 
         public override string CoordinateString
         {
@@ -44,17 +37,9 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
             }
         }
 
-        public Point[] Points
-        {
-            get { return _Points; }
-            set { _Points = value; }
-        }
+        public Point[] Points { get; set; }
 
-        public Line[] Lines
-        {
-            get { return _Lines; }
-            set { _Lines = value; }
-        }
+        public Line[] Lines { get; set; }
 
         public Point StartingPoint
         {
@@ -82,17 +67,9 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
             }
         }
 
-        public int PrimaryDirection
-        {
-            get { return _PrimaryDirection; }
-            set { _PrimaryDirection = value; }
-        }
+        public int PrimaryDirection { get; set; }
 
-        public double PrimaryBearing
-        {
-            get { return _PrimaryBearing; }
-            set { _PrimaryBearing = value; }
-        }
+        public double PrimaryBearing { get; set; }
 
         public double Length
         {
@@ -107,23 +84,11 @@ namespace USC.GISResearchLab.Common.Geometries.Lines
             }
         }
 
-        public int SourceId
-        {
-            get { return _SourceId; }
-            set { _SourceId = value; }
-        }
+        public int SourceId { get; set; }
 
-        public string Source
-        {
-            get { return _Source; }
-            set { _Source = value; }
-        }
 
-        public bool IsReversed
-        {
-            get { return _IsReversed; }
-            set { _IsReversed = value; }
-        }
+
+        public bool IsReversed { get; set; }
 
         public override bool Valid
         {

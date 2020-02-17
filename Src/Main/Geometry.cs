@@ -1,4 +1,5 @@
 using Microsoft.SqlServer.Types;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlTypes;
@@ -24,7 +25,13 @@ namespace USC.GISResearchLab.Common.Geometries
         public string Source { get; set; }
 
         public int SRID { get; set; }
+
+        [XmlIgnore]
+        [JsonIgnore]
         public SqlGeometry SqlGeometry { get; set; }
+
+        [XmlIgnore]
+        [JsonIgnore]
         public SqlGeography SqlGeography { get; set; }
 
         public Unit CoordinateUnits { get; set; }
